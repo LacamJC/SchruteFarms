@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.5px;
+}
+
+main {
+  padding: 0px 40px;
+}
+@media (min-width: 798px) {
+  main {
+    margin: 0px 100px;
+  }
+}
+main .apresentacao {
+  text-align: center;
+}
+main .apresentacao h2 {
+  font-size: 1.8em;
+}
+main .apresentacao p {
+  font-size: 1.1em;
+  width: 60%;
+  line-height: 40px;
+  margin: auto;
+}
+main .box1 {
+  display: flex;
+}
+main .box1 aside {
+  transition: all ease 0.5s;
+  border: 1px solid transparent;
+}
+main .box1 aside .profile {
+  width: 80%;
+  margin: auto;
+  aspect-ratio: 3/4;
+}
+main .box1 aside .profile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .box1 aside h3 {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 20px 0px;
+}
+main .box1 aside ul {
+  list-style-type: none;
+}
+main .box1 aside ul li {
+  padding: 10px;
+  transition: all ease 0.5s;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.795);
+  border-radius: 5px;
+}
+main .box1 aside ul li p {
+  line-height: 20px;
+  margin-top: 10px;
+}
+main .box1 aside ul li:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  transform: translateX(3px) translateY(-3px);
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.282);
+}
+main .box1 article h2 {
+  font-size: 1.2em;
+  padding: 10px 40px 5px 40px;
+  margin-top: 40px;
+}
+main .box1 article p {
+  font-size: 1em;
+  padding: 10px 30px;
+  width: 80%;
+  line-height: 40px;
+}/*# sourceMappingURL=style.css.map */

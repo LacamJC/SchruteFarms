@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    ;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    // background-color: red;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 0.5px;
+    }
+}
+
+main{
+    // background-color: yellow;
+    padding: 0px 40px;
+
+    @media (min-width: 798px)
+    {
+        margin: 0px 100px;
+    }
+
+    .apresentacao{
+        // background-color: red;
+        // font-size: 1.6em;
+        text-align: center;
+        
+        h2{
+            font-size: 1.8em;
+        }
+
+        p{
+            font-size: 1.1em;
+            width: 60%;
+            line-height: 40px;
+            margin: auto;
+        }
+    }
+
+
+    .box1
+    {
+        // background-color: pink;
+        display: flex;
+
+        aside{
+
+            .profile
+            {
+                width: 80%;
+                // height: 200px;
+                margin: auto;
+                // background-color: red;
+                aspect-ratio: 3/4;
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    
+                }
+            }
+
+            transition: all ease 0.5s;
+            border: 1px solid transparent;
+         
+
+            h3{
+                font-size: 1.2em;
+                text-align: center;
+                margin: 20px 0px;
+            }
+            
+            ul
+            {
+                // list-style-position: inside;
+                list-style-type: none;
+
+                li{
+                    padding: 10px;
+                    transition: all ease 0.5s;
+                    margin: 10px;
+
+                    background-color: rgba(255, 255, 255, 0.795);
+                    border-radius: 5px;
+
+                    p{
+                        line-height: 20px;
+                        margin-top: 10px;
+                    }
+
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                        border-radius: 5px;
+                        transform: translateX(3px) translateY(-3px);
+                        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.282);
+                    }
+                }
+            }
+        }
+
+        article
+        {
+            // background-color: green;
+            
+
+            h2{
+                font-size: 1.2em;
+                padding: 10px 40px 5px 40px;
+                margin-top: 40px;
+            }
+
+            p{
+                font-size: 1em;
+                padding: 10px 30px;
+                width: 80%;
+                line-height: 40px;
+            }
+        }
+    }
+}
